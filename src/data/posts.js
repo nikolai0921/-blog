@@ -1,0 +1,65 @@
+export const featuredPosts = [
+  {
+    id: 1,
+    title: '用 Rust 重寫一切：我從 Node.js 遷移的真實心得',
+    excerpt: '歷時三個月，將核心 API 服務從 Node.js 遷移到 Rust 的完整紀錄。效能提升了十倍，但過程中踩了哪些坑？',
+    tags: ['Rust', 'Node.js', '後端'],
+    date: '2026-06-18',
+    readTime: '8 分鐘',
+    coverGradient: 'from-forest-900 via-slate-900 to-slate-950',
+    accentColor: 'text-forest-400',
+    featured: true,
+  },
+  {
+    id: 2,
+    title: 'React 19 並發模式：實戰踩坑與最佳實踐',
+    excerpt: '深入探討 Concurrent Mode、Suspense 與 useTransition，搭配真實案例說明如何避免常見的渲染陷阱。',
+    tags: ['React', '前端', '效能'],
+    date: '2026-06-10',
+    readTime: '6 分鐘',
+    coverGradient: 'from-slate-900 via-slate-850 to-slate-950',
+    accentColor: 'text-sky-400',
+    featured: false,
+  },
+  {
+    id: 3,
+    title: 'Docker Compose + GitHub Actions：打造零摩擦 CI/CD 流程',
+    excerpt: '從本機開發到自動部署，完整介紹如何用最少的設定達到穩健的持續整合與部署管線。',
+    tags: ['DevOps', 'Docker', 'CI/CD'],
+    date: '2026-05-30',
+    readTime: '10 分鐘',
+    coverGradient: 'from-slate-900 via-slate-900 to-slate-950',
+    accentColor: 'text-amber-400',
+    featured: false,
+  },
+  {
+    id: 4,
+    title: 'PostgreSQL 索引策略：讓查詢快 100 倍的祕訣',
+    excerpt: 'B-Tree、GIN、BRIN 三種索引類型的適用場景，以及如何用 EXPLAIN ANALYZE 找出慢查詢的根源。',
+    tags: ['PostgreSQL', '資料庫', '效能'],
+    date: '2026-05-22',
+    readTime: '7 分鐘',
+    coverGradient: 'from-slate-900 via-slate-850 to-slate-950',
+    accentColor: 'text-violet-400',
+    featured: false,
+  },
+]
+
+export const popularTags = [
+  { name: 'React',      count: 12 },
+  { name: 'Rust',       count: 8  },
+  { name: '效能優化',   count: 7  },
+  { name: 'DevOps',     count: 6  },
+  { name: 'TypeScript', count: 11 },
+  { name: '資料庫',     count: 5  },
+  { name: 'Docker',     count: 4  },
+  { name: 'CI/CD',      count: 4  },
+  { name: '系統設計',   count: 3  },
+  { name: 'Linux',      count: 3  },
+]
+
+export const recentActivity = [
+  { type: 'post',    label: '發佈了新文章',   time: '3 天前' },
+  { type: 'project', label: '開源了 CLI 工具', time: '1 週前' },
+  { type: 'note',    label: '更新了閱讀筆記', time: '2 週前' },
+]
