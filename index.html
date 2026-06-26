@@ -1,10 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>blog</title>
+    <title>Blog.dev</title>
+    <script>
+      // GitHub Pages SPA redirect — restore path from query string
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+        // Also handle ?p= query param from 404.html
+        var qs = window.location.search;
+        if (qs) {
+          var params = qs.slice(1).split('&').reduce(function (q, range) {
+            var parts = range.split('=');
+            q[parts[0]] = parts.slice(1).join('=').replace(/~and~/g, '&');
+            return q;
+          }, {});
+          if (params.p !== undefined) {
+            window.history.replaceState(
+              null, null,
+              window.location.pathname.slice(0, -1) + (params.p || '') +
+              (params.q ? '?' + params.q : '') +
+              window.location.hash
+            );
+          }
+        }
+      }());
+    </script>
   </head>
   <body>
     <div id="root"></div>
