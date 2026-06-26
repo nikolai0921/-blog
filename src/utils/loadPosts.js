@@ -1,5 +1,5 @@
 // Vite: import all .md files under src/posts/ as raw strings
-const mdModules = import.meta.glob('../posts/*.md', { as: 'raw', eager: true })
+const mdModules = import.meta.glob('../posts/*.md', { query: '?raw', import: 'default', eager: true })
 
 function slugFromPath(path) {
   return path.replace(/^.*\//, '').replace(/\.md$/, '')
