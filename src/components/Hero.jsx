@@ -29,7 +29,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-slate-400 text-lg leading-relaxed mb-8 max-w-lg">
-            分享後端開發、系統設計、DevOps 的實戰經驗，以及對開源文化的深度思考。
+            記錄生活及平時學習AI CODE歷程
           </p>
 
           <div className="flex flex-wrap gap-3">

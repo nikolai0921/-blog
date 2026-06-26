@@ -11,9 +11,9 @@ export default function AboutPage() {
           </div>
           <div>
             <h2 className="text-xl font-semibold text-slate-100 mb-1">Farcos</h2>
-            <p className="text-forest-400 text-sm mb-3">Staff Engineer · 台北</p>
+            <p className="text-forest-400 text-sm mb-3">Staff Engineer · 台中</p>
             <p className="text-slate-400 text-sm leading-relaxed">
-              熱愛系統設計與效能調優，相信好的工程文化能改變世界。目前在台北某新創負責後端架構。平時喜歡鑽研 Rust、Postgres 和 Linux 核心，偶爾貢獻開源。
+              從事土木工程業，現階段學習如何使用AI編程。
             </p>
           </div>
         </div>
